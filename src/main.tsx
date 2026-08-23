@@ -31,7 +31,7 @@ function App(){
  if(window.location.pathname==='/atualizar-senha'||recoveryMode) return <UpdatePassword recoveryMode={recoveryMode}/>;
  if(!session) return <Auth onDone={setSession}/>;
  const total=expenses.reduce((s,e)=>s+Number(e.amount),0);
- return <div className="app"><header><div><span className="eyebrow">CONTAS DA CASA</span><h1>{tab==='inicio'?'Olá, família 👋':tab==='novo'?'Novo gasto':tab==='historico'?'Histórico':'Configurações'}</h1></div><button className="icon" onClick={()=>supabase?.auth.signOut()}>↗</button></header>
+ return <div className="app"><header><div><span className="eyebrow">CONTAS DA CASA</span><h1>{tab==='inicio'?'Olá, família 👋':tab==='novo'?'Novo gasto':tab==='historico'?'Histórico':'Configurações'}</h1></div><button onClick={()=>supabase?.auth.signOut()} style={{background:'white',border:'1px solid #e4e4e7',borderRadius:12,padding:'10px 13px',color:'#52525b',fontWeight:700}}>Sair</button></header>
  <main>{tab==='inicio'&&<Home total={total} expenses={expenses} cats={cats} setTab={setTab}/>}
  {tab==='novo'&&<NewExpense cats={cats} methods={methods} users={users} onSaved={load}/>}
  {tab==='historico'&&<History expenses={expenses} cats={cats} methods={methods}/>}
