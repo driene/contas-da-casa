@@ -9,7 +9,7 @@ const supabase=(SUPABASE_URL&&SUPABASE_KEY)?createClient(SUPABASE_URL,SUPABASE_K
 // Configure VITE_APP_URL in Vercel with the canonical production address.
 // The fallback keeps all e-mail links out of localhost in production.
 const configuredAppUrl=import.meta.env.VITE_APP_URL as string|undefined;
-const APP_URL=(configuredAppUrl||'https://contas-da-casa.vercel.app').replace(/\/$/,'');
+const APP_URL=(configuredAppUrl||'https://contas-da-casa-six-sigma.vercel.app').replace(/\/$/,'');
 const authRedirect=(path:string)=>`${APP_URL}${path}`;
 const isRecoveryRequest=()=>new URLSearchParams(window.location.hash.slice(1)).get('type')==='recovery'||new URLSearchParams(window.location.search).get('type')==='recovery';
 const familyId='00000000-0000-0000-0000-000000000001';
