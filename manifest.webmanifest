@@ -1,1 +1,1 @@
-{"name":"Contas da Casa","short_name":"Contas da Casa","start_url":"/","display":"standalone","background_color":"#f7f7f5","theme_color":"#111827","lang":"pt-BR"}
+{"name":"Contas da Casa","short_name":"Contas","start_url":"/","display":"standalone","background_color":"#f7f7f5","theme_color":"#3b2a78","lang":"pt-BR","icons":[{"src":"/app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
