@@ -6,3 +6,4 @@
 .card .primary+.link{width:48px;height:48px;margin:18px 0 0 8px;padding:0;border:1px solid #fecaca;border-radius:14px;background:#fff1f2;color:#dc2626!important;font-weight:900;line-height:1;vertical-align:top}
 .card:has(.primary+.link) .primary{width:calc(100% - 64px);display:inline-block}
 .accordion-row{cursor:pointer}.accordion-row .chevron{margin-left:9px;color:#71717a}.subcategory-panel{margin:0 -4px 14px;padding:14px;border-radius:16px;background:#f5f3ff;border:1px solid #ddd6fe}.subcategory-panel>label{margin-top:14px}
+.dot.registrar-driene{background:#ede9fe;color:#6d28d9}.dot.registrar-aurelio{background:#dbeafe;color:#1d4ed8}
