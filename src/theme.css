@@ -8,3 +8,4 @@
 .accordion-row{cursor:pointer}.accordion-row .chevron{margin-left:9px;color:#71717a}.subcategory-panel{margin:0 -4px 14px;padding:14px;border-radius:16px;background:#f5f3ff;border:1px solid #ddd6fe}.subcategory-panel>label{margin-top:14px}
 .dot.registrar-driene{background:#ede9fe;color:#6d28d9}.dot.registrar-aurelio{background:#dbeafe;color:#1d4ed8}
 .filterchips{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 12px}.filterchips button{padding:7px 10px;border-radius:10px;background:#eef2ff;color:#4338ca;font-weight:700}.filterchips button.active{background:#4338ca;color:#fff}
+.filter-toggle{width:100%;margin:0 0 12px;padding:11px 14px;border-radius:13px;background:#fff;color:#4338ca;font-weight:800;text-align:left;box-shadow:0 3px 16px #00000008}.filter-toggle.open{margin-bottom:8px}.filter-panel{margin-bottom:14px}
