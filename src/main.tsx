@@ -62,10 +62,10 @@ function History({expenses,cats,subcats,methods,users,onSaved}:{expenses:Expense
   const months=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
   return <section>
     <input className="search" placeholder="🔎  Buscar gasto..." value={q} onChange={e=>setQ(e.target.value)}/>
+    <div className="filterchips"><button className={year==='2026'?'active':''} onClick={()=>{setYear(year==='2026'?'':'2026');setMonth('')}}>2026</button>{year&&months.map((label,index)=>{const value=String(index+1).padStart(2,'0');return <button key={value} className={month===value?'active':''} onClick={()=>setMonth(month===value?'':value)}>{label}</button>})}</div>
     <button className={`filter-toggle ${filtersOpen?'open':''}`} aria-expanded={filtersOpen} aria-controls="history-filters" onClick={()=>setFiltersOpen(!filtersOpen)}>{filtersOpen?'− Filtros':'+ Filtros'}</button>
     {filtersOpen&&<div className="card filter-panel" id="history-filters">
       <div className="sectionhead"><label>Filtros</label><button className="link" onClick={clear}>Limpar filtros</button></div>
-      <div className="filterchips"><button className={year==='2026'?'active':''} onClick={()=>{setYear(year==='2026'?'':'2026');setMonth('')}}>2026</button>{year&&months.map((label,index)=>{const value=String(index+1).padStart(2,'0');return <button key={value} className={month===value?'active':''} onClick={()=>setMonth(month===value?'':value)}>{label}</button>})}</div>
       <select value={cat} onChange={e=>{setCat(e.target.value);setSubcat('')}}><option value="">Todas as categorias</option>{cats.map(c=><option value={c.id} key={c.id}>{c.name}</option>)}</select>
       {filteredSubcats.length>0&&<select value={subcat} onChange={e=>setSubcat(e.target.value)}><option value="">Todas as subcategorias</option>{filteredSubcats.map(sc=><option value={sc.id} key={sc.id}>{sc.name}</option>)}</select>}
       <select value={paid} onChange={e=>setPaid(e.target.value)}><option value="">Quem pagou: todos</option>{users.map(u=><option value={u.id} key={u.id}>{u.name}</option>)}</select>
