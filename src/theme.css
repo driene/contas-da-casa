@@ -3,5 +3,5 @@
 .card:nth-child(odd),.assistant{border:1px solid #ede9fe}.primary{background:linear-gradient(135deg,#4338ca,#0f766e)}
 .toggle{width:38px;height:22px;border-radius:999px;padding:3px;background:#d4d4d8;display:inline-flex;justify-content:flex-start;align-items:center;transition:.2s}
 .toggle span{display:block;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0004}.toggle.on{background:#14b8a6;justify-content:flex-end}
-.card .primary+.link{width:48px;height:48px;margin:18px 0 0 8px;padding:0;border:1px solid #fecaca;border-radius:14px;background:#fff1f2;vertical-align:top}
-.card:has(.primary+.link) .primary{width:calc(100% - 56px);display:inline-block}
+.card .primary+.link{width:48px;height:48px;margin:18px 0 0 8px;padding:0;border:1px solid #fecaca;border-radius:14px;background:#fff1f2;color:#dc2626!important;font-weight:900;line-height:1;vertical-align:top}
+.card:has(.primary+.link) .primary{width:calc(100% - 64px);display:inline-block}
