@@ -5,3 +5,4 @@
 .toggle span{display:block;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0004}.toggle.on{background:#14b8a6;justify-content:flex-end}
 .card .primary+.link{width:48px;height:48px;margin:18px 0 0 8px;padding:0;border:1px solid #fecaca;border-radius:14px;background:#fff1f2;color:#dc2626!important;font-weight:900;line-height:1;vertical-align:top}
 .card:has(.primary+.link) .primary{width:calc(100% - 64px);display:inline-block}
+.accordion-row{cursor:pointer}.accordion-row .chevron{margin-left:9px;color:#71717a}.subcategory-panel{margin:0 -4px 14px;padding:14px;border-radius:16px;background:#f5f3ff;border:1px solid #ddd6fe}.subcategory-panel>label{margin-top:14px}
